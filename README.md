@@ -1,4 +1,4 @@
-# Pomodoro
+# Pomodoro Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.11.
 
@@ -6,22 +6,23 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## About🐱‍👤
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+this is a Pomodoro web-app where you can schedule your working time and make your day more productive.
 
-## Build
+# Will this make me the next Elon Musk?
+ 
+ take it easy, boy.😢
+ 
+ ## 👓Sobre o código👓
+ Há uma page principal, nela rodam todos os componentes: **Picker** & **Timer**
+  
+ ### 👌 Picker:
+ Um componente mais simples, nele você põe os numeros nas casas de unidade ou dezena e ele transforma tudo em segundos, que é passado ao outro componente e transformado tem time com ajuda do moment.js
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### ⏱ Timer:
+Esse componente ficou maior do que eu gostária, com calma, talvez conseguisse refatorar ele.
+Timer mostra o relógio, os botões de controle do tempo e uma barra horizontal no topo do card para uma resposta visual de quanto tempo falta.
+Ele sozinho, faz o controle do tempo tanto de Worktime quanto de Breaktime.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Por aqui, também é emitido o alarme. Espero que peguem as referências.

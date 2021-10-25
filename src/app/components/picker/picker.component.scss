@@ -1,0 +1,21 @@
+.container{
+    width: 100%;
+    min-height: 5rem;
+}
+
+.square{
+    margin: auto 1rem;
+}
+
+.inSquare{
+    font-size: 1.5rem;
+    margin: auto;
+    text-align: center;
+    i{
+        opacity: 0.3;
+    }
+    i:hover{
+        cursor: pointer;
+        opacity: 0.7;
+    }
+}

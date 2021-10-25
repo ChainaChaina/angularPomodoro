@@ -1,0 +1,49 @@
+<div class="container spaceAround flex">
+    <div class="flex">
+        <div class="square">
+            <div class="inSquare">
+                <i (click)="ticTac('up',0 )" class="fas fa-sort-up"></i>
+            </div>
+            <div class="inSquare">
+                {{timeArray[0].time}}
+            </div>
+            <div class="inSquare">
+                <i (click)="ticTac('down',0 )" class="fas fa-sort-down"></i>
+            </div>
+        </div>
+        <div class="square">
+            <div class="inSquare">
+                <i (click)="ticTac('up',1 )" class="fas fa-sort-up"></i>
+            </div>
+            <div class="inSquare">
+                {{timeArray[1].time}}
+            </div>
+            <div class="inSquare">
+                <i (click)="ticTac('down',1 )" class="fas fa-sort-down"></i>
+            </div>
+        </div>
+        <div class="square">:</div>
+        <div class="square">
+            <div class="inSquare">
+                <i (click)="ticTac('up',2 )" class="fas fa-sort-up"></i>
+            </div>
+            <div class="inSquare">
+                {{timeArray[2].time}}
+            </div>
+            <div class="inSquare">
+                <i (click)="ticTac('down',2 )" class="fas fa-sort-down"></i>
+            </div>
+        </div>
+        <div class="square">
+            <div class="inSquare">
+                <i (click)="ticTac('up',3 )" class="fas fa-sort-up"></i>
+            </div>
+            <div class="inSquare">
+                {{timeArray[3].time}}
+            </div>
+            <div class="inSquare">
+                <i (click)="ticTac('down',3 )" class="fas fa-sort-down"></i>
+            </div>
+        </div>
+    </div>
+</div>

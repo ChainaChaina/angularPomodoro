@@ -1,0 +1,9 @@
+<div class="container flex">
+    <div class="box break">
+        <app-timer [workTimeFromParents]=workTime [breakTimeFromParents]=breakTime ></app-timer>
+        <h1 class="textInput">Tempo de trabalho:</h1>
+        <app-picker (newTime)="newTimeWork($event)"></app-picker>
+        <h1 class="textInput">Tempo de descanso:</h1>
+        <app-picker (newTime)="newTimeBreak($event)"></app-picker>
+    </div>
+</div>

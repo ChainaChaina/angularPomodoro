@@ -1,0 +1,61 @@
+.pomodoros{
+    text-align: center;
+    margin: 1rem 0px;
+    opacity: 0.5;
+}
+
+.container{
+    min-width: 100%;
+}
+
+.clock{
+    font-size: 5rem;
+    margin: auto;
+}
+
+
+.timerDiv{
+    min-width: 100%;
+    min-height: 0.8rem;
+    background-color: rgb(20, 220, 37);
+    margin: 0px;
+}
+.innerTimerDiv{
+    min-height: 0.8rem;
+    background-color: crimson;
+    margin: auto;
+
+}
+
+.icon{
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.icon:hover{
+    cursor: pointer;
+}
+
+.title{
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3rem;
+}
+
+.break{
+background-image: -webkit-linear-gradient(60deg, #f35626 23%, #a31a65 87%);
+background-clip:text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: hue 6s infinite linear;
+-webkit-animation: hue 6s infinite linear;
+}
+
+@keyframes hue {
+    from {
+        -webkit-filter: hue-rotate(0deg);
+    }
+    to {
+        -webkit-filter: hue-rotate(-360deg);
+    }
+}

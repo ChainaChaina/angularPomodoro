@@ -1,0 +1,24 @@
+<h3 class="pomodoros">Pomodoros feitos: {{pomodoros}}</h3>
+<div class="timerDiv">
+    <div [ngStyle]="{'width': fillHeight+ '%' }" class="innerTimerDiv"></div>
+</div>
+<div class="flex">
+    <div class="flex displayColumn marginAuto container" *ngIf="workTimeIsOn">
+        <h1 class="title">WORK</h1>
+        <span class="clock flex">{{clock}}</span>
+        <div class="marginAuto">
+            <i *ngIf="pause" (click)='workTime()' class="fas fa-play icon"></i>
+            <i  *ngIf="!pause" (click)='pauseTimerWork()' class="fas fa-pause icon"></i>
+            <i (click)='restart("work")' class="fas fa-redo icon"></i>
+        </div>
+    </div>
+    <div class="flex displayColumn marginAuto container" *ngIf="!workTimeIsOn" >
+        <h1 class="title break">BREAK </h1>
+        <span class="clock flex break">{{clock}}</span>
+        <div class="marginAuto">
+            <i *ngIf="pause" (click)='breakTime()' class="fas fa-play icon"></i>
+            <i  *ngIf="!pause" (click)='pauseTimerBreak()' class="fas fa-pause icon"></i>
+            <i (click)='restart("break")' class="fas fa-redo icon "></i>
+        </div>
+    </div>
+</div>
